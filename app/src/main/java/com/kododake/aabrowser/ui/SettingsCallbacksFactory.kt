@@ -56,9 +56,7 @@ object SettingsCallbacksFactory {
                 uiManager.applyQuickActionButtonPreferences()
             },
             onPickStartPageBackground = { callbacks.onPickBackgroundRequested() },
-            onClearStartPageBackground = { startPageManager.clearStartPageBackground() },
-            onSponsorsVisibilityChanged = { startPageManager.refreshStartPage() },
-            onAAAnythingBannerVisibilityChanged = { startPageManager.refreshStartPage() }
+            onClearStartPageBackground = { startPageManager.clearStartPageBackground() }
         )
     }
 }
