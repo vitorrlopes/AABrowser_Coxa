@@ -22,11 +22,12 @@ jobs:
           distribution: temurin
           java-version: "21"
 
-      - name: Install Android SDK packages
+      # The Android Gradle Plugin downloads any missing SDK platform/build-tools
+      # on its own once the licenses are accepted.
+      - name: Accept Android SDK licenses
         run: |
           SDKMANAGER=$(ls -d "$ANDROID_HOME"/cmdline-tools/*/bin/sdkmanager | sort -V | tail -n1)
           yes | "$SDKMANAGER" --licenses > /dev/null || true
-          "$SDKMANAGER" "platforms;android-37" "platform-tools"
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
