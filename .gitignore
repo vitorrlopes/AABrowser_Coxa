@@ -14,4 +14,6 @@ local.properties
 *.log
 icon.png
 /test
-/tmp
+/tmp__pycache__/
+manute/experiments/results/*
+!manute/experiments/results/.gitkeep
