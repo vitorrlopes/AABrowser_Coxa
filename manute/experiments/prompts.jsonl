@@ -1,4 +1,0 @@
-{"id": "a1-curto", "prompt": "Em uma frase: o que é uma API REST?", "max_tokens": 128}
-{"id": "a2-raciocinio", "prompt": "Um serviço recebe 120 requisições por minuto e cada uma leva 300 ms para ser processada por um único worker. Quantos workers são necessários no mínimo para não formar fila? Mostre o cálculo em até 5 linhas.", "max_tokens": 256}
-{"id": "a3-codigo", "prompt": "Escreva uma função Python is_valid_ipv4(s: str) -> bool, sem usar bibliotecas, e 3 casos de teste com assert.", "max_tokens": 512}
-{"id": "a4-contexto-longo", "prompt": "Resuma em 5 tópicos os riscos de armazenar chaves de API dentro de um APK Android e como mitigá-los.", "max_tokens": 512}
